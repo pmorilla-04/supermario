@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inici</title>
+    <link rel="stylesheet" href="css/estils.css">
+
+</head>
+<body>
+
+  
+
+    <!--Anem a crear la capsalera-->
+    <header class="header">
+
+        <div class="logo">
+            
+            <img src="img/logoMario.png" alt="logotip de super mario">
+
+        </div>
+
+        <ul class="menu">
+            <li><a href="#">Inici</a></li>
+            <li><a href="poders.html">Poders</a></li>
+            <li><a href="items.html">Items</a></li>
+            <li><a href="sobrenosaltres.html">Sobre Nosaltres</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+        
+    </header>
+    <!--Final de la capsalera-->
+
+    
+    <!--Ara creem la secció del BANNER principal-->
+    <section class="banner">
+            <div class="contingutBanner">
+                <h1>Benvinguts</h1>
+                <p>Super Mario és un joc de plataformes creat per Nintendo, on el jugador controla Mario, un fontaner, per resoldre trencaclosques, derrotar enemics i salvar la princesa Peach</p>
+                <a href="https://sm64-embed.glitch.me/start.html">Jugar</a>
+                <a href="">Personatges</a>
+            </div>
+    </section>
+    <!--Final Banner-->
+
+
+    <!--Anem a crear la secció de 3 columnes per posar personatges de super Mario-->
+    <div class="grid-container">
+
+      <!--Caixa d'en Mario-->
+        <div class="grid-item1">
+          <img src="img/mario.png" alt="Mario">
+          <div class="descripcio">
+            <h1>Mario</h1>
+            <p>L'heroi principal del Regne Xampinyó. El Mario és molt positiu i sempre està alegre.</p>
+            <button onclick="playMario()">Crit Mario!</button> <!--Posar boto-->
+            <audio id="marioSound" src="audio/mario.mp3"></audio> <!-- Inserim audio-->
+            
+            <script> //Programa 
+                function playMario() {
+                    document.getElementById('marioSound').play();
+                }
+            </script>
+          </div>
+        </div>
+        
+         <!--Caixa d'en Luigi-->
+        <div class="grid-item2">
+          <img src="img/luigi.png" alt="Luigi">
+          <div class="descripcio">
+            <h1>Luigi</h1>
+            <p>Luigi és el germà de Mario, alt, valent i sempre disposat a ajudar en les aventures.</p>
+            <button onclick="playLuigi()">Crit Luigi!</button> <!--Posar boto-->
+            <audio id="luigiSound" src="audio/luigi.mp3"></audio> <!-- Inserim audio-->
+             <script> //Programa
+                function playLuigi() {
+                document.getElementById('luigiSound').play();
+                  }  
+              </script>
+          </div>
+        </div>
+
+         <!--Caixa de la Peach-->
+        <div class="grid-item3">
+          <img src="img/peach.png" alt="">
+          <div class="descripcio">
+            <h1>Peach</h1>
+            <p>Princess Peach és valenta, gentil i sovint rescatada per Mario, defensant el Regne de les Flors.</p>
+            <button onclick="playPeach()">Crit Peach!</button> <!--Posar boto-->
+            <audio id="peachSound" src="audio/peach.mp3"></audio> <!-- Inserim audio-->
+              <script> //Programa
+                function playPeach() {
+                  document.getElementById('peachSound').play();
+                }
+              </script>
+
+          </div>
+        </div>
+
+         <!--Caixa d'en Wario-->
+        <div class="grid-item4">
+          <img src="img/wario.png" alt="">
+          <div class="descripcio">
+            <h1>Wario</h1>
+            <p>Wario és un personatge egoista, fort i ambiciós, rival de Mario, sempre buscant riqueses i poder.</p>
+            <button onclick="playWario()">Crit Wario!</button> <!--Posar boto--> 
+            <audio id="warioSound" src="audio/wario.mp3"></audio> <!-- Inserim audio-->
+              <script> //Programa
+              function playWario() {
+                document.getElementById('warioSound').play();
+              }
+              </script>
+          </div>
+        </div>
+
+         <!--Caixa d'en Waluigi-->
+        <div class="grid-item5">
+          <img src="img/waluigi.png" alt="">
+          <div class="descripcio">
+            <h1>waluigi</h1>
+            <p>Waluigi és el malvat, egoista i trapella, company de Wario, sempre rivalitzant amb Luigi i Mario.</p>
+            <button onclick="playwaluigi()">Crit Waluig!</button> <!--Posar boto--> 
+            <audio id="waluigiSound" src="audio/waluigi.mp3"></audio> <!-- Inserim audio-->
+              <script> //Pograma
+                function playwaluigi() {
+                  document.getElementById('waluigiSound').play(); 
+                }
+              </script>
+          </div>
+        </div>
+
+        <!--Caixa d'en Bowser-->
+        <div class="grid-item6">
+          <img src="img/Browser.png" alt="">
+
+          <div class="descripcio">
+            <h1>Browser</h1>
+            <p>Bowser és el principal antagonista de Mario, rei dels Koopa, sempre intentant conquerir el Regne dels Cogombres.</p>
+            <button onclick="playBrowser()">Crit Browser!</button> <!--Posar boto--> 
+            <audio id="browserSound" src="audio/bowser.mp3"></audio> <!-- Inserim audio-->
+              <script> //Pograma
+                function playBrowser() {
+                  document.getElementById('browserSound').play();
+                }
+              </script>
+          </div>
+        </div>
+      </div>
+
+      <!--Crem 2 columnes-->
+      <div class="container2">
+      
+        <div class="image-column">
+          <img src="img/marioiluigi.png" alt="Mario i luigi">
+        </div>
+
+        <div class="text-column">
+          <h1>Mario i Luigi</h1>
+          <p>Mario i Luigi són dos germans italians valents que viatgen per mons fantàstics per salvar la princesa Peach. Amb els seus gorros vermells i verds, sempre s'ajuden mútuament per derrotar els enemics i superar obstacles. Junts, han viscut infinites aventures a través de terres plenes de sorpreses i perills. </p><br>
+          <p>La seva unió i coratge els fa invencibles en cada repte que afronten.</p>
+          <a href="https://mario.nintendo.com/es/" target="_blank">Pagina Super Mario!</a>
+
+        </div>
+
+      </div>
+      <!--Final 2 columnes-->
+
+      <br/>
+
+      
+        <iframe src="https://mukeshkmr776.github.io/super-mario/" height="100" width="100%"></iframe>
+
+
+        <!--Anem a crear el footer-->
+        <footer>
+          <div class="footer-content">
+            <img src="img/logoNintendo.svg" alt="">
+            <p class="texto">Design By Pmorilla</p>
+          </div>
+        </footer>
+        <!--Final footer-->
+  
+</body>
+</html>
